@@ -18,11 +18,12 @@
 
 <form action="{{ route('admin.about.update', 1) }}" method="POST" enctype="multipart/form-data">
                 @csrf
+
                 @method('PUT')
 
           
               <div class="form-group row mb-4 align-items-center">
-                <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
+                <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title Test</label>
                 <div class="col-12 col-md-9 col-lg-9">
                   <input type="string" name="title" class="form-control" value="{{ $about->title }}">
                 </div>
