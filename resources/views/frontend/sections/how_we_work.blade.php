@@ -2,8 +2,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>How We Work</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2></h2>
+        <p></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -19,8 +19,8 @@
                     <i class="bi bi-pencil-square"></i>
                   </div>
                   <div class="step-content">
-                    <h3>Project Planning</h3>
-                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                    <h3>{{$work->title_1}}</h3>
+                    <p>{{ $work->description_1 }}</p>
                   </div>
                 </div>
               </div>
@@ -34,8 +34,8 @@
                     <i class="bi bi-gear"></i>
                   </div>
                   <div class="step-content">
-                    <h3>Development Phase</h3>
-                    <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+                    <h3>{{$work->title_2}}</h3>
+                    <p> {{ $work->description_2 }} </p>
                   </div>
                 </div>
               </div>
@@ -49,8 +49,8 @@
                     <i class="bi bi-search"></i>
                   </div>
                   <div class="step-content">
-                    <h3>Testing &amp; QA</h3>
-                    <p>Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero.</p>
+                    <h3>{{ $work->title_3 }}</h3>
+                    <p>{{$work->description_3 }}</p>
                   </div>
                 </div>
               </div>
@@ -64,8 +64,8 @@
                     <i class="bi bi-rocket-takeoff"></i>
                   </div>
                   <div class="step-content">
-                    <h3>Launch &amp; Support</h3>
-                    <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt.</p>
+                    <h3>{{ $work->title_4 }}</h3>
+                    <p>{{ $work->description_4 }}</p>
                   </div>
                 </div>
               </div>

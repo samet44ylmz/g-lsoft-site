@@ -10,8 +10,10 @@ class About extends Model
         'title',
         'description',
         'image_1',
+
         'image_2',
-        'image_3',
+        'image_3'
+    
     ];
 
     

@@ -46,11 +46,11 @@
     <!-- /Services Section -->
 
     <!-- Services Alt Section -->
-    @include('frontend.sections.services_alt')
+   
    <!-- /Services Alt Section -->
 
     <!-- Call To Action 2 Section -->
-    @include('frontend.sections.call_to_action')
+   
    <!-- /Call To Action 2 Section -->
 
     <!-- Portfolio Section -->

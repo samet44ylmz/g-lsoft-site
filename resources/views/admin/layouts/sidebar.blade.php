@@ -4,7 +4,7 @@
         <ul class="navbar-nav navbar-right">
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
             <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a>
+            <div class="d-sm-none d-lg-inline-block">Merhaba, Samet Yılmaz</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Logged in 5 min ago</div>
               <a href="features-profile.html" class="dropdown-item has-icon">
@@ -48,6 +48,10 @@
 
               <li><a class="nav-link" href="{{ route('admin.hero.index') }}"><i class="far fa-square"></i> <span>Hero</span></a></li>
                <li><a class="nav-link" href="{{ route('admin.about.index') }}"><i class="far fa-square"></i> <span>About</span></a></li>
+              <li><a class="nav-link" href="{{ route('admin.work.index') }}"><i class="far fa-square"></i> <span>Work</span></a></li>
+              <li><a class="nav-link" href="{{ route('admin.services.index') }}"><i class="far fa-square"></i> <span>Services</span></a></li>
+              <li><a class="nav-link" href="{{ route('admin.contact.index') }}"><i class="far fa-square"></i> <span>Contact</span></a></li>
+
 
             </ul>
         </aside>

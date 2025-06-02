@@ -44,6 +44,23 @@
                     </div>
                 </div>
                @endif
+                @if ($about->image_1)
+                <div class="form-group row mb-4">
+                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Preview Image</label>
+                    <div class="col-sm-12 col-md-7">
+                        <img class="w-25" src="{{ asset($about->image_2) }}" alt="">
+                    </div>
+                </div>
+               @endif
+                @if ($about->image_1)
+                <div class="form-group row mb-4">
+                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Preview Image</label>
+                    <div class="col-sm-12 col-md-7">
+                        <img class="w-25" src="{{ asset($about->image_3) }}" alt="">
+                    </div>
+                </div>
+               @endif
+
 
 
                      <div class="form-group row mb-4">
@@ -52,6 +69,26 @@
                         <div id="image-preview" class="image-preview">
                           <label for="image-upload" id="image-label">Choose File</label>
                           <input type="file" name="image_1" id="image-upload" />
+                        </div>
+                      </div>
+                    </div>
+
+                     <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">İmage</label>
+                      <div class="col-sm-12 col-md-7">
+                        <div id="image-preview" class="image-preview">
+                          <label for="image-upload" id="image-label">Choose File</label>
+                          <input type="file" name="image_2" id="image-upload" />
+                        </div>
+                      </div>
+                    </div>
+
+                     <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">İmage</label>
+                      <div class="col-sm-12 col-md-7">
+                        <div id="image-preview" class="image-preview">
+                          <label for="image-upload" id="image-label">Choose File</label>
+                          <input type="file" name="image_3" id="image-upload" />
                         </div>
                       </div>
                     </div>

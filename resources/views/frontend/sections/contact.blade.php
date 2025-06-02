@@ -2,8 +2,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>{{ $contact_customer->title }}</h2>
+        <p>{{ $contact_customer->description }}</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -14,8 +14,8 @@
               <div class="icon-box">
                 <i class="bi bi-geo-alt"></i>
               </div>
-              <h3>Our Address</h3>
-              <p>2847 Rainbow Road, Springfield, IL 62701, USA</p>
+              <h3>{{ $contact_customer->adres_title }}</h3>
+              <p>{{ $contact_customer->adres_description }}</p>
             </div>
           </div>
 
@@ -24,9 +24,8 @@
               <div class="icon-box">
                 <i class="bi bi-telephone"></i>
               </div>
-              <h3>Contact Number</h3>
-              <p>Mobile: +1 (555) 123-4567<br>
-                Email: info@example.com</p>
+              <h3>{{ $contact_customer->phone_title }}</h3>
+              <p>{{ $contact_customer->phone_description }}            </p>
             </div>
           </div>
 
@@ -35,9 +34,8 @@
               <div class="icon-box">
                 <i class="bi bi-clock"></i>
               </div>
-              <h3>Opening Hour</h3>
-              <p>Monday - Saturday: 9:00 - 18:00<br>
-                Sunday: Closed</p>
+              <h3>{{  $contact_customer->hour_title }}</h3>
+              <p> {{ $contact_customer->hour_description}}</p>
             </div>
           </div>
         </div>

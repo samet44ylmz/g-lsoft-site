@@ -12,11 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('abouts', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('id')->primary(); // Otomatik artan değil, elle 1 olarak atanacak
             $table->string('title')->nullable();
             $table->text('description')->nullable();
             $table->string('image_1')->nullable();
-           
+            $table->string('image_2')->nullable();
+            $table->string('image_3')->nullable();
             $table->timestamps();
         });
     }

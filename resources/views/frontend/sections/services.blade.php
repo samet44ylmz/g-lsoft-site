@@ -2,8 +2,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>{{ $services->title_1 }}</h2>
+        <p>{{ $services->description_1 }}</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -16,8 +16,8 @@
                 <i class="bi bi-code-slash"></i>
               </div>
               <div class="service-content">
-                <h3>Custom Web Development</h3>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>{{ $services->title_2 }}</h3>
+                <p>{{ $services->description_2 }}</p>
                 <a href="#" class="service-link">
                   <span>Learn More</span>
                   <i class="bi bi-arrow-right"></i>
@@ -32,8 +32,8 @@
                 <i class="bi bi-phone-fill"></i>
               </div>
               <div class="service-content">
-                <h3>Mobile App Solutions</h3>
-                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</p>
+                <h3>{{ $services->title_3 }}</h3>
+                <p>{{ $services->description_3 }}</p>
                 <a href="#" class="service-link">
                   <span>Learn More</span>
                   <i class="bi bi-arrow-right"></i>
@@ -48,8 +48,8 @@
                 <i class="bi bi-palette2"></i>
               </div>
               <div class="service-content">
-                <h3>UI/UX Design</h3>
-                <p>Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                <h3>{{ $services->title_4 }}</h3>
+                <p>{{ $services->description_4 }}</p>
                 <a href="#" class="service-link">
                   <span>Learn More</span>
                   <i class="bi bi-arrow-right"></i>
@@ -64,8 +64,8 @@
                 <i class="bi bi-bar-chart-line"></i>
               </div>
               <div class="service-content">
-                <h3>Digital Marketing</h3>
-                <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.</p>
+                <h3>{{  $services->title_5 }}</h3>
+                <p>{{ $services->description_5 }}</p>
                 <a href="#" class="service-link">
                   <span>Learn More</span>
                   <i class="bi bi-arrow-right"></i>
@@ -80,8 +80,8 @@
                 <i class="bi bi-cloud-check"></i>
               </div>
               <div class="service-content">
-                <h3>Cloud Computing</h3>
-                <p>Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                <h3>{{ $services->title_6 }}</h3>
+                <p>{{ $services->description_6 }}</p>
                 <a href="#" class="service-link">
                   <span>Learn More</span>
                   <i class="bi bi-arrow-right"></i>
@@ -96,8 +96,8 @@
                 <i class="bi bi-shield-lock"></i>
               </div>
               <div class="service-content">
-                <h3>Cybersecurity Solutions</h3>
-                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et. Proin eget tortor risus.</p>
+                <h3>{{ $services->title_7  }}</h3>
+                <p>{{ $services->description_7  }}</p>
                 <a href="#" class="service-link">
                   <span>Learn More</span>
                   <i class="bi bi-arrow-right"></i>

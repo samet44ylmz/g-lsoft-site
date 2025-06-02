@@ -1,8 +1,11 @@
 <?php
 
 use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HeroController;
+use App\Http\Controllers\Admin\ServicesController;
+use App\Http\Controllers\Admin\WorkController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +25,9 @@ require __DIR__.'/auth.php';
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
 Route::resource('hero', HeroController::class);
 Route::resource('about', AboutController::class);
+Route::resource('work', WorkController::class);
+Route::resource('services', ServicesController::class);
+Route::resource('contact', ContactController::class);
     
 });
 
