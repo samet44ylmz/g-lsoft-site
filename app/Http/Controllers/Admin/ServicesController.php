@@ -71,7 +71,11 @@ class ServicesController extends Controller
             'description_7' => ['required', 'max:500'],
         ]);
 
-        $services = Services::findOrFail($id);
+        $services = Services::find($id);
+        if (!$services) {
+            $services = new Services();
+            $services->id = $id;
+        }
 
         $services->title_1 = $request->input('title_1');
         $services->description_1 = $request->input('description_1');

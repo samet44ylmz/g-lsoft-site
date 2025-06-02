@@ -14,9 +14,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contact_customer = \App\Models\ContactCustomer::first();
-        $messages = \App\Models\ContactCustomer::whereNotNull('message')->orderByDesc('created_at')->get();
-        return view('admin.contact.index', compact('contact_customer', 'messages'));
+        $contact_customer = ContactCustomer::first();
+        return view('admin.contact.index', compact('contact_customer'));
     }
 
     /**
@@ -65,14 +64,9 @@ class ContactController extends Controller
             'phone_description' => ['required', 'max:500'],
             'hour_title'        => ['required', 'max:200'],
             'hour_description'  => ['required', 'max:500'],
-            
         ]);
 
-        $contact_customer = ContactCustomer::find($id);
-        if (!$contact_customer) {
-            $contact_customer = new ContactCustomer();
-            $contact_customer->id = $id;
-        }
+        $contact_customer = ContactCustomer::findOrFail($id);
 
         $contact_customer->title             = $request->input('title');
         $contact_customer->description       = $request->input('description');
@@ -82,6 +76,7 @@ class ContactController extends Controller
         $contact_customer->phone_description = $request->input('phone_description');
         $contact_customer->hour_title        = $request->input('hour_title');
         $contact_customer->hour_description  = $request->input('hour_description');
+
         $contact_customer->save();
 
         return redirect()->back()->with('success', 'İletişim ayarları güncellendi.');
